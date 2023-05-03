@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		#calculator {
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			margin: 100px auto;
+			padding: 20px;
+			width: 300px;
+		}
+		#output {
+			background-color: #eee;
+			border: none;
+			border-radius: 5px;
+			box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+			color: #333;
+			font-size: 24px;
+			height: 50px;
+			margin-bottom: 10px;
+			padding: 10px;
+			text-align: right;
+			width: 100%;
+		}
+		button {
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+			color: #333;
+			cursor: pointer;
+			font-size: 18px;
+			height: 40px;
+			margin: 5px;
+			width: 40px;
+		}
+		button:hover {
+			background-color: #f2f2f2;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+		}
+		button:active {
+			box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+		}
+	</style>
+</head>
+<body>
+	<div id="calculator">
+		<input id="output" type="text" readonly>
+		<button onclick="addNumber('7')">7</button>
+		<button onclick="addNumber('8')">8</button>
+		<button onclick="addNumber('9')">9</button>
+		<button onclick="addOperator('/')">÷</button>
+		<button onclick="addNumber('4')">4</button>
+		<button onclick="addNumber('5')">5</button>
+		<button onclick="addNumber('6')">6</button>
+		<button onclick="addOperator('*')">×</button>
+		<button onclick="addNumber('1')">1</button>
+		<button onclick="addNumber('2')">2</button>
+		<button onclick="addNumber('3')">3</button>
+		<button onclick="addOperator('-')">-</button>
+		<button onclick="addNumber('0')">0</button>
+		<button onclick="addNumber('.')">.</button>
+		<button onclick="calculate()">=</button>
+		<button onclick="addOperator('+')">+</button>
+		<button onclick="clearOutput()">C</button>
+	</div>
+
+	<script>
+		let output = document.getElementById("output");
+
+		function addNumber(num) {
+			output.value += num;
+		}
+
+		function addOperator(operator) {
+			if (output.value.slice(-1) === "+" || output.value.slice(-1) === "-" || output.value.slice(-1) === "*" || output.value.slice(-1)
