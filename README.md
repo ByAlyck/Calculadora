@@ -1,5 +1,5 @@
 # Calculadora 
-Calc
+
 Esta é uma calculadora simples feita usando HTML, CSS e JavaScript. A calculadora possui uma interface amigável que permite ao usuário realizar operações matemáticas básicas.
 
 Funcionalidades
