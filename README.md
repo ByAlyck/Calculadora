@@ -15,4 +15,4 @@ Um navegador da web atualizado, como Google Chrome, Mozilla Firefox, Safari, etc
 Como usar
 Faça o download ou clone este repositório em seu computador.
 Navegue até o diretório onde os arquivos estão localizados.
-Abra o arquivo index.html em seu navegador.
+Abra o arquivo index.html em seu navegador..
